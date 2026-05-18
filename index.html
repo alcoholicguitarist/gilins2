@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner Platformer Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Beginner Platformer Prototype</h1>
+
+    <div class="game-wrap">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="2D side-scrolling platformer game"></canvas>
+      <div id="message" class="message">Collect coins, avoid spikes, and reach the flag!</div>
+    </div>
+
+    <section class="touch-controls" aria-label="Mobile controls">
+      <div class="touch-group">
+        <button id="leftButton" class="touch-button" type="button">◀</button>
+        <button id="rightButton" class="touch-button" type="button">▶</button>
+      </div>
+      <div class="touch-group">
+        <button id="attackButton" class="touch-button attack" type="button">Attack</button>
+        <button id="jumpButton" class="touch-button jump" type="button">Jump</button>
+      </div>
+    </section>
+
+    <p class="help-text">
+      Keyboard: A/D or Arrow Keys to move, W/Space/Up to jump, J/X to attack.
+      Mobile: use the on-screen buttons.
+    </p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
